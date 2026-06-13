@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أسيل عطار - أيقونة الجمال</title>
+    <!-- استدعاء خطوط عربية كلاسيكية من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            /* لون خلفية يشبه الورق القديم */
+            background-color: #F4EFE6;
+            color: #3E2F23;
+            font-family: 'Amiri', serif;
+            background-image: 
+                radial-gradient(#d3c6b3 1px, transparent 1px),
+                radial-gradient(#d3c6b3 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+            background-attachment: fixed;
+        }
+
+        .title-font {
+            font-family: 'Aref Ruqaa', serif;
+        }
+
+        .parchment {
+            background-color: #FAF6ED;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 
+                        inset 0 0 50px rgba(139, 115, 85, 0.1);
+            border: 1px solid #D6C5B3;
+        }
+
+        .decorative-line {
+            width: 80%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #8B7355, transparent);
+            margin: 2rem auto;
+        }
+
+        /* تنسيق مشغل الصوت ليتناسب مع التصميم الكلاسيكي */
+        audio {
+            width: 100%;
+            max-width: 400px;
+            height: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        audio:hover {
+            opacity: 1;
+        }
+        
+        .poetry-text {
+            line-height: 2.5;
+            text-shadow: 0px 1px 1px rgba(255,255,255,0.5);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 sm:p-8">
+
+    <div class="parchment max-w-3xl w-full p-8 sm:p-12 md:p-16 rounded-sm relative text-center">
+        
+        <!-- زخرفة علوية -->
+        <div class="mb-8 text-[#8B7355]">
+            <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" opacity="0.2"/>
+                <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14.5c-3.58 0-6.5-2.92-6.5-6.5S8.42 5.5 12 5.5s6.5 2.92 6.5 6.5-2.92 6.5-6.5 6.5z"/>
+                <circle cx="12" cy="12" r="3"/>
+            </svg>
+        </div>
+
+        <!-- العنوان -->
+        <h1 class="title-font text-5xl sm:text-6xl md:text-7xl mb-4 text-[#5C4033] font-bold">
+            أسيل عطار
+        </h1>
+        <p class="text-xl sm:text-2xl text-[#8B7355] italic mb-8">
+            وجهٌ من الزمن الجميل
+        </p>
+
+        <div class="decorative-line"></div>
+
+        <!-- نص الغزل (شعر ونثر) -->
+        <div class="poetry-text text-lg sm:text-xl md:text-2xl text-[#4A3B32] space-y-6">
+            <p>
+                في ملامحها تجتمع قصائدُ العصور،<br>
+                وكأنها قمرٌ أطلّ من شرفات الأندلس ليضيء عتمة الحاضر.
+            </p>
+            
+            <p>
+                <strong>أسيل...</strong><br>
+                اسمٌ يحمل من الرقة ما يُخجل أمواج النهر الهادئة.<br>
+                <strong>وعطار...</strong><br>
+                كأن عبير الأرض وعطر الياسمين العتيق قد اختُزل في حضورها.
+            </p>
+
+            <p>
+                عينان ترويان حكاياتٍ لم تُكتب بعد،<br>
+                وابتسامةٌ توقف عقارب الساعة،<br>
+                لتعيدنا إلى زمنٍ كان فيه الجمالُ يُغنى، ولا يُرى إلا بالقلوب.<br>
+                هي ليست مجرد ملامح، بل لوحةٌ كلاسيكيةٌ فريدة،<br>
+                عصيّةٌ على التقليد، بهيةٌ كأغنيةٍ خالدة.
+            </p>
+        </div>
+
+        <div class="decorative-line"></div>
+
+        <!-- مشغل الصوت -->
+        <div class="mt-12 mb-8 flex flex-col items-center">
+            <p class="text-sm text-[#8B7355] mb-3">استمع إلى ألحان الزمن الجميل</p>
+            <!-- تأكد من وجود ملف song1.mp3 في نفس المجلد مع هذا الملف -->
+            <audio controls>
+                <source src="song1.mp3" type="audio/mpeg">
+                متصفحك لا يدعم مشغل الصوت.
+            </audio>
+        </div>
+
+        <!-- التوقيع -->
+        <div class="mt-16 pt-8 border-t border-[#D6C5B3]">
+            <p class="title-font text-lg text-[#8B7355]">
+                من إعداد: قيس جازي
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+```
